@@ -4,9 +4,11 @@
     box-sizing: border-box;
 }
 .container{
+    display: flex;
+    flex-direction: column;
     /* border: 1px red solid; */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 2rem;
+    font-size: 2em;
     font-weight: 400;
     width: 80%;
     height: 90vh;
@@ -26,7 +28,7 @@
 }
 .input_field{
     border: 3px rgba(44, 9, 9, 0.7) solid;
-font-size: 1.5rem;
+font-size: 1em;
 width: 100%;
 border-radius: 10px;
 background-color: rgba(245, 245, 245, 0.9);
@@ -35,7 +37,7 @@ padding: 5px;
 cursor: pointer;
 }
 #gender{
-    font-size: 1.5rem;
+    font-size: 1em;
 width: 100%;
 border-radius: 10px;
 background-color: rgba(245, 245, 245, 0.9);
@@ -64,13 +66,77 @@ cursor: pointer;
 #btn_submit:active{
     color: rgb(94, 255, 0);
     box-shadow: whitesmoke;
-    font-size: 1.6rem;
+    font-size: 1.6em;
 }
 #charCount{
     float:right;
-    font-size: 1rem;
+    font-size: 1em;
 }
 #error_span{
     float:right;
+    font-size: 1em;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 700px) {
+body{
+    font-size:1em;
+    background-color: rgb(200, 220, 238);
+}
+#form_field{
+    border-radius: 20px;
+    background-color: rgb(200, 220, 238);
+    width: 50%;
+    height: 50vh;
+    /* margin: auto; */
+    padding: 10px;
+    align-items: center;
+    vertical-align: middle;
+}
+#gender{
     font-size: 1rem;
+width: 100%;
+border-radius: 10px;
+background-color: rgba(245, 245, 245, 0.9);
+margin:5px;
+padding: 5px;
+cursor: pointer;
+}
+.input_field{
+border: 3px rgba(44, 9, 9, 0.7) solid;
+font-size: 1em;
+width: 100%;
+border-radius: 10px;
+background-color: rgba(245, 245, 245, 0.9);
+margin:5px;
+padding: 5px;
+cursor: pointer;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px red solid; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    width: 80%;
+    height: 90vh;
+    margin: auto;
+    align-items: center;
+    vertical-align: middle;
+}
+#btn_submit{
+    margin:10px;
+    padding: 10px;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    border-radius: 10px;
+    background-color: rgb(190, 35, 157);
+    float: right;
+    text-align: center;
+    font-size: 0.5em;
+    width:50px;
+    height:min-content;
+    cursor: pointer;
+}
 }
