@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+    /* border: 1px red solid; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    width: 50%;
+    height: 50vh;
+    margin: auto;
+    align-items: center;
+    vertical-align: middle;
+}
+#form_field{
+    border-radius: 20px;
+    background-color: rgb(200, 220, 238);
+    width: 50%;
+    height: 50vh;
+    margin: auto;
+    padding: 100px;
+    align-items: center;
+    vertical-align: middle;
+}
+.input_field{
+    border: 3px rgba(44, 9, 9, 0.7) solid;
+font-size: 1.5rem;
+width: 100%;
+border-radius: 10px;
+background-color: rgba(245, 245, 245, 0.9);
+margin:5px;
+padding: 5px;
+cursor: pointer;
+}
+#gender{
+    font-size: 1.5rem;
+width: 100%;
+border-radius: 10px;
+background-color: rgba(245, 245, 245, 0.9);
+margin:5px;
+padding: 5px;
+cursor: pointer;
+}
+#btn_submit{
+    margin:10px;
+    padding: 10px;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    border-radius: 10px;
+    background-color: rgb(190, 35, 157);
+    float: right;
+    text-align: center;
+    font-size: 1.5rem;
+    width:150px;
+    height:min-content;
+    cursor: pointer;
+}
+#btn_submit:hover{
+    background-color: rgb(109, 32, 109);
+}
+#btn_submit:active{
+    color: rgb(94, 255, 0);
+    box-shadow: whitesmoke;
+    font-size: 1.6rem;
+}
+#charCount{
+    float:right;
+    font-size: 1rem;
+}
+#error_span{
+    float:right;
+    font-size: 1rem;
+}

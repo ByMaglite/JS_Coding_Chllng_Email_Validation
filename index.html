@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Email Validation</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <form action="#" id="form_field">
+            <label for="first_name">First Name:</label>
+            <input id="first_name" class ="input_field text_input" type="text"required>
+
+            <label for="last_name">Last Name:</label>
+            <input id="last_name" class ="input_field text_input" type="text"required maxlength="40">
+            <span id ="charCount"></span>
+           
+            <label for="email">E-mail:</label>
+            <input id="email" class ="input_field email_input" type="email" placeholder="username@websitename.com" required onkeyup ="validateEmail()">
+            <span id="error_span"></span><br>
+
+            <label for="gender">Gender:</label>
+            <select name="gender" id="gender">
+                <option value=""disabled selected>Choose Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <br>
+            <button id ="btn_submit" type="submit">Send</button>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
