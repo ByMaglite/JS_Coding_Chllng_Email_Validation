@@ -18,7 +18,7 @@ lastName.addEventListener("keyup", showRemainChar);
 
 const validateEmail = () => {
     let errorSpan = document.getElementById("error_span");
-    const regexPattern = /\S+\@+\S+\.+\S/;
+    const regexPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     if (!regexPattern.test(email.value)) {
         errorSpan.innerHTML = "invalid email address!";
         errorSpan.style.color = "red";
